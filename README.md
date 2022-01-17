@@ -1,7 +1,7 @@
 # Mobile_Gift
 
 
-MySQL
+## JDK 11, Spring Boot, MySQL
 
 ### giftList
 
