@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+
+<mapper namespace="com.gift.demo.dao.AdminDao">
+	
+	 <select id="getAllGiftList" resultType="hashmap">
+        select * from giftList
+    </select>
+
+<insert id="addGift" parameterType="com.gift.demo.dto.AdminDto">
+INSERT INTO giftList (
+vendor,
+gift_name,
+price,
+image_url
+) VALUES (#{vendor}, #{gift_name}, #{price}, #{image_url})
+
+</insert>
+
+</mapper>
